@@ -1,5 +1,3 @@
-
-//regressar la instancia la final del modulo, de este modulo.
 var afinacionFactory = require ("./afinacion.js");
 var bujiaFactory = require ("./bujias.js");
 var aceiteFactory = require ("./fAceite.js");

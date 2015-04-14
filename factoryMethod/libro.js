@@ -1,3 +1,7 @@
+//it allows classes to defer the selection
+//of the implementation of an instantiation to another class.
+
+//Products.
 var WateryGod = (function () {
     function WateryGod() {
     }
@@ -25,7 +29,7 @@ var DefaultGod = (function () {
 })();
 Religion.DefaultGod = DefaultGod;
 
-//a factory that is responsible for constructing each of the different gods, as
+//Factory that is responsible for constructing each of the different gods, as
 //shown in the following code:
 
 var GodFactory = (function () {
@@ -41,7 +45,7 @@ var GodFactory = (function () {
     return GodFactory;
 })();
 
-//how to call the factory:
+//Client. how to call the factory, uses the interfase prayTo() that also have the products.
 var Prayer = (function () {
     function Prayer() {
     }
