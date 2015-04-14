@@ -1,2 +1,0 @@
-# patternsExa
-ejercicios de patterns
