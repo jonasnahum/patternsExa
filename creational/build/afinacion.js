@@ -1,3 +1,4 @@
+
 //clase intermedia que tiene los productos.
 var Afinacion = (function () {
     function Afinacion() {

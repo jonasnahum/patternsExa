@@ -1,3 +1,5 @@
+//creational paterns: number of ways to create //objects in order
+//to optimize, for reuse.
 var Event = (function () {
     function Event(name) {
         this.name = name;
