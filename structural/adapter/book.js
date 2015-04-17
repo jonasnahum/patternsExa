@@ -1,3 +1,5 @@
+//unifica dos clases a través de sus interfases por medio de un metodo común que se encuentra en //la clase adaptador. si hay dos clases que se parecen pero no son iguales, adapter las adapta para que una tercera clase pueda llamarlas a través del adapter. el adapter, le pone lo que le falta a la interfaceSimpleShip para que sea como interface Ship.
+
 //structural patterns; these
 //are patterns that are concerned with easing the design by describing simple ways
 //in which objects can interact.

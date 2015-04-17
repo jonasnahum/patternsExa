@@ -8,8 +8,9 @@ var Adapter = (function () {
         this.puri.lavarGarrafon();
     };
     Adapter.prototype.llenarGarrafon = function () {
-        this.puri.encenderOzono();
-        this.puri.abrirLLave();
+        var paso3 = this.puri.encenderOzono();
+        var paso4 = this.puri.abrirLLave();
+        return {paso3:paso3, paso4:paso4};
     };
     Adapter.prototype.cobrar = function () {
         this.puri.registrarVenta();

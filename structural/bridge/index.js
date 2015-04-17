@@ -1,3 +1,5 @@
+//bridge es un patron igual a adapter, pero tiene dos o mas adapters.
+
 var notFactory = require ("./notificator");
 var celFactory = require ("./celular");
 var adapFactory = require ("./celMedioAdapter");
