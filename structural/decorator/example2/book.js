@@ -12,14 +12,14 @@ var BasicArmor = (function () {
 })();
 
 var ChainMail = (function () {
-    function ChainMail(decoratedArmor) {//eje. recibe BasicArmor.
+    function ChainMail(decoratedArmor) {//decorador que envuelve al decorado, el decorado es la                                             clase base cuando llega aquí ambos tienen que ser clases                                            similares.con la misma interfase.
         this.decoratedArmor = decoratedArmor;
     }
-    ChainMail.prototype.CalculateDamageFromHit = function (hit) {
+    ChainMail.prototype.CalculateDamageFromHit = function (hit) {//modifies the arguments that are //passed into the decorated class
         hit.Strength = hit.Strength * .8;
         return this.decoratedArmor.CalculateDamageFromHit(hit);
     };
-    ChainMail.prototype.GetArmorIntegrity = function () {
+    ChainMail.prototype.GetArmorIntegrity = function () {//modifies the result from the underlying //class
         return .9 * this.decoratedArmor.GetArmorIntegrity();
     };
     return ChainMail;
@@ -39,6 +39,6 @@ export interface IArmor{
 //until a long chain of methods is actually called for each method call. This behavior,
 //of course, remains invisible to outside callers.
 //To make use of this armor, you simply use the following code:
-var armor = new ChainMail(new BasicArmor());
+var armor = new ChainMail(new BasicArmor());//objejto = objDecorated(objDecorator)
     console.log(armor.CalculateDamageFromHit({Location: "head",
     Weapon: "Sock filled with pennies", Strength: 12}));
