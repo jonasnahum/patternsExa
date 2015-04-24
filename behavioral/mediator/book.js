@@ -1,0 +1,1 @@
+//facilita relacioes de tipo many to many.
