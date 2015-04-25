@@ -1,5 +1,8 @@
 //creational paterns: number of ways to create //objects in order
 //to optimize, for reuse.
+//In order to simplify the building of
+//these classes and encapsulate the knowledge of building the class away from the
+//consumers, a builder may be used.
 var Event = (function () {
     function Event(name) {
         this.name = name;

@@ -1,3 +1,4 @@
+
 #!/usr/bin/env node --harmony
 'use strict';
 var array = ["uno", "dos", "tres"];
