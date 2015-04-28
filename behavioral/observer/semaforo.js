@@ -7,7 +7,7 @@ var Semaforo = (function () {
         this.posiblesEstados = ["verde","amarillo","rojo"];
         this.actual = 0;
     }
-    util.inherits(Semaforo, EventEmitter);
+    util.inherits(Semaforo, EventEmitter);//Semaforo hereda de EventEmitter.
     
     Semaforo.prototype.cambiarEstado = function () {
         this.emit("antesDeCambiar", this.posiblesEstados[this.actual]);

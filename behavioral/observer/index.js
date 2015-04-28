@@ -2,7 +2,7 @@ var semaforo = require("./semaforo");
 
 var s = semaforo();
 
-s.on("antesDeCambiar", function(actual) {
+s.on("antesDeCambiar", function(actual) {//escuchando el "evento" y recibe la var actual
     console.log("cuidado, el semaforo está en " + actual + " y está a punto de cambiar");
 });
 
