@@ -3,7 +3,7 @@ ejercicios de patterns
 [![Build Status](https://travis-ci.org/rogithub/jimenez-http-communication.svg?branch=importclasses)](https://travis-ci.org/rogithub/jimenez-http-communication)
 
 # Design Patterns
-A guidance on ways in which to solve common problems.
+Well defined solutions to common problems.
 
 ##Creational 
 Number of ways to crate objects in order to optimize for reuse.
@@ -15,25 +15,24 @@ builds a family of related classes.
 Allows a class to request a new instance of an interfase without the class making decisions about which implementation of the interfase to use.
 ###prototype
 for inheritance, copying existing objects, or cloning.
+
 ##Structural
 For easing the design by describing simple ways in which objects can interact.
 ###adapter
 adapta dos clases que se parecen, completa lo que les falta para que sean iguales, y para que una tercera clase pueda llamarlas a trevés de un adapter.
 ###bridge
 usa dos o más adapters.
-
 ###composite
 use  operations interchangeable  a component through all of the contained objects as they are tree structure.
 ###decorator
 grap and augment an existing class.
-
 ###fazade
 da coherencia a varias clases de un mismo campo semántico para realizar una tarea específica.
 ###flyweight
 for defer all request for a class property to the prototype. When there are a lot of instances that have a few variety between them. 
-
 ###proxy
 una clase que se manda llamar en lugar de otra. Es un intermediario.
+
 ##Behavioral
 these patterns are about how data flows between objects.
 ###chain
@@ -56,3 +55,10 @@ executes code in order to an event.
 tiene un managger que evita el uso de if, a su vez tiene distintos estados(clases con la misma interfaz). el manager genera resultados con base en el estado actual.
 ###strategy
 The strategy pattern provides a method of swapping these strategies out in a transparent fashion.
+###templateMethod
+utiliza una clase abstracta como base que tiene metodos como algoritmo.los medodos abstractos de la clase abstracta deben ser implementados en las clases hijas(overriden), y los otros metodos pueden ser compartidos sin modificacion en la clase hija.
+###visitor
+to perform some action over a collection of objects that differ in type and we want to perform a different action depending on the object type, we wouldtypically need to make use of a large if statement, but this pattern is the solution.
+
+
+

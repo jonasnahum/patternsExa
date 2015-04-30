@@ -1,3 +1,5 @@
+//es para tener estados evitando los if, los estados son clases que tienen la misma interfaz y el manager da un resultado según el estado actual.
+
 //The state pattern is characterized by having a state manager that abstracts
 //away the internal state and proxies message through to the appropriate state that
 //is implemented as a class.//All the logic within states and governing state transitions
