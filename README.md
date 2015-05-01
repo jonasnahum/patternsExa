@@ -3,7 +3,7 @@ ejercicios de patterns
 [![Build Status](https://travis-ci.org/rogithub/jimenez-http-communication.svg?branch=importclasses)](https://travis-ci.org/rogithub/jimenez-http-communication)
 
 # Design Patterns
-Well defined solutions to common problems.
+Patterns are well defined solutions to common problems.
 
 ##Creational 
 Number of ways to crate objects in order to optimize for reuse.

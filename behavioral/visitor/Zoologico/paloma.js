@@ -2,8 +2,8 @@ var Paloma = (function () {
     function Paloma() {
         this._type = "Paloma";
     }
-    Paloma.prototype.huir = function () {//interfase.
-        console.log("la Paloma se fue volando");
+    Paloma.prototype.vacunar = function () {//interfase.
+        console.log("la paloma ha sido vacunada contra la gripe aviar");
     };
     Paloma.prototype.visit = function (visitor) {
         visitor.visit(this);
