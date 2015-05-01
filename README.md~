@@ -58,11 +58,7 @@ The strategy pattern provides a method of swapping these strategies out in a tra
 ###templateMethod
 utiliza una clase abstracta como base que tiene metodos como algoritmo.los medodos abstractos de la clase abstracta deben ser implementados en las clases hijas(overriden), y los otros metodos pueden ser compartidos sin modificacion en la clase hija.
 ###visitor
-un objeto viene y visita tu objeto sin cambiarlo y hace algo con el.to perform some action over a collection of objects that differ in type and we want to perform a different action depending on the object type, we wouldtypically need to make use of a large if statement, but this pattern is the solution.
-
-##Dependency Inyection
-pasarle instancias creadas a  objetos que tienen dependencia de ellas.
-
+to perform some action over a collection of objects that differ in type and we want to perform a different action depending on the object type, we wouldtypically need to make use of a large if statement, but this pattern is the solution.
 
 
 
